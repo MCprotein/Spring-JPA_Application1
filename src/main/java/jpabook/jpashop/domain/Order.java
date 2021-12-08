@@ -26,8 +26,7 @@ public class Order {
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "delivery_id")
-    private Deliv
-    ery delivery;
+    private Delivery delivery;
 
     private LocalDateTime orderDate; // 주문시간
 
