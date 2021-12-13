@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MemberController {
 
     private final MemberService memberService;
-
-    @GetMapping("/member/new")
+    @GetMapping(value = "/members/new")
     public String createForm(Model model) {
         model.addAttribute("memberForm", new MemberForm());
         return "members/createMemberForm";
